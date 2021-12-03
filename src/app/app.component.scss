@@ -1,0 +1,57 @@
+.margin-top {
+  margin-top: 80px;
+}
+.input-message {
+  position: absolute;
+  bottom: 10px;
+  width: 96%;
+  margin-left: 2%;
+
+  input {
+    width: 90%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 1.4em;
+    outline: none;
+  }
+  button {
+    width: 10%;
+    background-color: #fff;
+    border: 0;
+    text-align: left;
+    outline: none;
+    .mat-icon {
+      color: blue;
+    }
+  }
+}
+.list-messages {
+  width: 100%;
+  li.this {
+    display: flex;
+    justify-content: flex-end;
+    span {
+      background-color: #4e70dd;
+      color: #fff;
+      max-width: 50%;
+      padding: 10px;
+      font-size:1em;
+      border-radius: 1.4em 1.4em 0 1.4em;
+      margin-top: 5px;
+    }
+  }
+  li.other {
+    display: flex;
+    justify-content: flex-start;
+    span {
+      background-color: #545555;
+      color: #fff;
+      max-width: 50%;
+      padding: 10px;
+      font-size:1em;
+      border-radius: 1.4em 1.4em  1.4em 0;
+      margin-top: 5px;
+    }
+  }
+}
