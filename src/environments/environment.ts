@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   appUrl:"https://nodesocketappp.herokuapp.com"
+ // appUrl:"http://localhost:3000"
 };
 
 /*

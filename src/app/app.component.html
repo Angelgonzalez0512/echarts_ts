@@ -24,7 +24,35 @@
   
   <div class="container my-4">
     <div class="w-100">
-      <div echarts [options]="chartOption" class="demo-chart" (chartInit)="onChartInit($event)"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div echarts [options]="chartOption" class="demo-chart" (chartInit)="onChartInit($event)"></div>
+        </div>
+        <div class="col-md-6">
+          <div echarts [options]="chartOption3" class="demo-chart" (chartInit)="onChart3Init($event)"></div>
+        </div>
+      </div>
+   </div>
+  </div>
+  <div class="container my-4">
+    <div class="w-100">
+      <div class="row">
+        <div class="col-md-8">
+          <div echarts [options]="chartOption2" class="demo-chart" (chartInit)="onChart2Init($event)"></div>
+    
+        </div>
+        <div class="col-md-4">
+            <div class="bg-primary p-2" *ngIf="mensajeestado.id==1">
+                {{mensajeestado.text}}
+            </div>
+            <div class="bg-info p-2" *ngIf="mensajeestado.id==2">
+              {{mensajeestado.text}}
+          </div>
+          <div class="bg-warning p-2" *ngIf="mensajeestado.id==3">
+            {{mensajeestado.text}}
+        </div>
+        </div>
+      </div>
      </div>
   </div>
   <!-- <div class="container">
