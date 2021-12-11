@@ -116,7 +116,7 @@ export class AppComponent {
   initChart() {
     this.chartOption = {
       title: {
-        text: 'Temperatura ' + new Date().getDate() + "/" + new Date().getMonth() + "/" + new Date().getFullYear() + " datos de prueba"
+        text: 'Temperatura ' + new Date().getDate() + "/" + (new Date().getMonth()+1) + "/" + new Date().getFullYear() 
       },
       xAxis: {
         type: 'category',
@@ -160,7 +160,7 @@ export class AppComponent {
     };
     this.chartOption3 = {
       title: {
-        text: 'Humedad ' + new Date().getDate() + "/" + new Date().getMonth() + "/" + new Date().getFullYear() + " datos de prueba"
+        text: 'Humedad ' + new Date().getDate() + "/" + (new Date().getMonth()+1) + "/" + new Date().getFullYear() 
       },
       xAxis: {
         type: 'category',
